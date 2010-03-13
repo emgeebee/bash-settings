@@ -2,6 +2,7 @@
 alias g='git '
 alias gst='git status'
 alias gs='git status'
+alias ga='git add'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff | mate'
@@ -15,4 +16,4 @@ alias gpp='git pull; git push'
 
 # For when you are stuck between worlds...
 alias gsd='git svn dcommit'
-alias gsr='git svn rebase' 
+alias gsr='git svn rebase'

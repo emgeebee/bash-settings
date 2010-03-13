@@ -1,0 +1,22 @@
+#
+# Define project parent directories
+#
+# e.g.:
+# 
+# PROJECT_PARENT_DIRS[1]="$HOME/Development/Ruby" 
+# PROJECT_PARENT_DIRS[2]="$HOME/Development/PHP"
+# ... 
+#
+
+PROJECT_PARENT_DIRS[0]="$HOME/Projects"
+. $HOME/.bash_settings/.dependencies.sh
+. $HOME/.bash_settings/.general.sh
+. $HOME/.bash_settings/.aliases.sh
+. $HOME/.bash_settings/.git.sh
+. $HOME/.bash_settings/.git_autocompletion.sh
+. $HOME/.bash_settings/.project_aliases.sh
+. $HOME/.bash_settings/.rails.sh
+. $HOME/.bash_settings/.ruby.sh
+. $HOME/.bash_settings/.ssh_autocompletion.sh
+. $HOME/.bash_settings/.vcs.sh
+
