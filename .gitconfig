@@ -1,2 +1,11 @@
 [color]
   ui = auto
+[user]
+	name = Marcel de Graaf
+	email = mail@marceldegraaf.net
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 973x791+224+139
+	main-window-view = FileView
+	history-view-vpane-position = 406
+	file-view-vpane-position = 454

@@ -16,6 +16,7 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.ch setf cheat
   au BufNewFile,BufRead *.liquid setf liquid
   au! BufRead,BufNewFile *.haml setfiletype haml
+  au! BufRead,BufNewFile Gemfile setfiletype ruby
   autocmd BufNewFile,BufRead *.yml setf eruby
 augroup END
 
@@ -26,6 +27,10 @@ augroup myfiletypes
   autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
 augroup END
 
+"
+" Swap file location
+"
+set directory=~/.vimswap
 
 " Syntax
 " =============================================================================
@@ -134,7 +139,9 @@ map <C-H> <C-W>h
 map <C-L> <C-W>l
 map <C-K> <C-W>k
 
-set vb t_vb= " Turn off bell
+set noerrorbells
+set visualbell
+set t_vb= " Turn off bell
 
 " Make tab in v mode work like I think it should (keep highlighting):
 vmap <tab> >gv
