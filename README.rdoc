@@ -1,6 +1,6 @@
-= OSX Settings
+= Bash Settings
 
-This is where I put my bash settings for OSX. This includes:
+This is where I put my bash settings for *nix systems. This includes:
 
 * Nicely colored and tiny prompt
 * Yellow = clean, red = dirty in prompt for SVN and Git
@@ -11,31 +11,21 @@ This is where I put my bash settings for OSX. This includes:
 == Installation
 
 * Check out this repository
-* Add these lines your /etc/bashrc, depending on where you cloned this repo:
 
-  . /Users/iain/.osx_settings/.general.sh
-  . /Users/iain/.osx_settings/.aliases.sh
-  . /Users/iain/.osx_settings/.git.sh
-  . /Users/iain/.osx_settings/.git_autocompletion.sh
-  . /Users/iain/.osx_settings/.project_aliases.sh
-  . /Users/iain/.osx_settings/.rails.sh
-  . /Users/iain/.osx_settings/.ruby.sh
-  . /Users/iain/.osx_settings/.ssh_autocompletion.sh
-  . /Users/iain/.osx_settings/.vcs.sh
-
-* Symlink any other files that you want to use, in your home directory.
-* Add your development directories to make their subdirectories symlinks, to your
-  bashrc or bash_profile:
+* In .bash_profile, add aliases for your project dir(s):
 
   PROJECT_PARENT_DIRS[1]="$HOME/Development/Ruby"
-  PROJECT_PARENT_DIRS[2]="$HOME/Development/Other"
+  PROJECT_PARENT_DIRS[2]="$HOME/Hacking"
+
+* Add the various .sh files to your .bash_profile, depending on your local clone of this repo:
+
+	. /path/to/.bash-settings/.general.sh
+
+* Create some symlinks (from your home directory):
+
+	ln -s /path/to/.bash-settings/.vim .vim
+	ln -s /path/to/.bash-settings/.vimrc .vimrc
 
 == Credits
 
-I can't remember exactly where I got all stuff, but mostly from relevance/etc.
-
-Heavily modified some stuff to fit my own needs of course.
-
-Thanks everybody who contributed!
-
-Feel free to use this, fork this or whatever.
+Cloned from iain, edited where I saw fit.
