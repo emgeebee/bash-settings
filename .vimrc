@@ -147,6 +147,28 @@ set t_vb= " Turn off bell
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+"
+" Show tabs and white spaces because they suck
+" ============================================
+if (&termencoding == "utf-8") || has("gui_running")
+  if v:version >= 700
+    if has("gui_running")
+      set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
+    else
+      " xterm + terminus hates these
+      set list listchars=tab:»·,trail:·,extends:>,nbsp:_
+    endif
+  else
+    set list listchars=tab:»·,trail:·,extends:…
+  endif
+else
+  if v:version >= 700
+    set list listchars=tab:>-,trail:.,extends:>,nbsp:_
+  else
+    set list listchars=tab:>-,trail:.,extends:>
+  endif
+endif
+
 
 " Configure a giant status line
 " =============================================================================
