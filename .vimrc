@@ -35,11 +35,9 @@ set directory=~/.vimswap
 " Syntax
 " =============================================================================
 syntax on
-colorscheme ir_black
 
 set nobackup
 set nowritebackup
-
 
 " Tabs and stuff
 " =============================================================================
@@ -54,8 +52,6 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
-
-
 
 " Concerning the width
 " =============================================================================
@@ -73,6 +69,7 @@ set backspace=indent,eol,start
 " GUI stuff
 " =============================================================================
 if has("gui_running")
+	colorscheme ir_black
 
 	set anti
   set go-=T " No Toolbar
@@ -84,9 +81,16 @@ if has("gui_running")
 	filetype plugin indent on
 
 	if has("gui_macvim")
-		set fuoptions=maxvert,maxhorz " fullscreen options (MacVim only), resized window when changed to fullscreen
+		" fullscreen options (MacVim only), resized window when changed to
+		" fullscreen
+		set fuoptions=maxvert,maxhorz
 	end
 
+	" Lines should be 80 characters long. If longer, give thema subtle
+	" red background
+	" ================================================================
+	highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+	match OverLength /\%81v.\+/
 end
 
 " Control-B shows the bufexplorer
