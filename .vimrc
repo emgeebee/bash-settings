@@ -174,6 +174,48 @@ else
 endif
 
 
+"
+" APIdock search for word under cursor
+" ====================================
+let g:browser = 'open -a /Applications/Google\ Chrome.app '
+
+"
+" Open the Ruby ApiDock page for the word under cursor, in a new browser tab
+" ==========================================================================
+function! OpenRubyDoc(keyword)
+  let url = 'http://apidock.com/ruby/search/quick?query='.a:keyword
+  exec '!'.g:browser.' '.url.' &'
+endfunction
+noremap RB :call OpenRubyDoc(expand('<cword>'))<CR>
+
+"
+" Open the Rails ApiDock page for the word under cursor, in a new browser tab
+" ===========================================================================
+function! OpenRailsDoc(keyword)
+  let url = 'http://apidock.com/rails/search/quick?query='.a:keyword
+  exec '!'.g:browser.' '.url.' &'
+endfunction
+noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
+
+"
+" Open the Rspec ApiDock page for the word under cursor, in a new browser tab
+" ===========================================================================
+function! OpenRspecDoc(keyword)
+  let url = 'http://apidock.com/rspec/search/quick?query='.a:keyword
+  exec '!'.g:browser.' '.url.' &'
+endfunction
+noremap RS :call OpenRspecDoc(expand('<cword>'))<CR>
+
+"
+" I hate trailing white spaces with a passion. This function lets you remove
+" them with a simple SHIFT + W W
+" ==========================================================================
+function! RemoveTrailingWhiteSpaces()
+  " Remove ALL trailing whitespaces
+  %s/\s\+$//
+endfunction
+noremap WW :call RemoveTrailingWhiteSpaces()<CR>
+
 " Configure a giant status line
 " =============================================================================
 " set statusline=%<%f\ %h%m%r%=%-20.(line=%l,col=%c%V,totlin=%L%)\%h%m%r%=%-40(,%n%Y%)\%P
