@@ -85,6 +85,7 @@ if has("gui_running")
 		" fullscreen
 		set fuoptions=maxvert,maxhorz
 	end
+endif
 
 " Control-B shows the bufexplorer
 " =============================================================================
