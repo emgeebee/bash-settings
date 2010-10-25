@@ -85,13 +85,7 @@ if has("gui_running")
 		" fullscreen
 		set fuoptions=maxvert,maxhorz
 	end
-
-	" Lines should be 80 characters long. If longer, give thema subtle
-	" red background
-	" ================================================================
-	highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-	match OverLength /\%81v.\+/
-end
+endif
 
 " Control-B shows the bufexplorer
 " =============================================================================

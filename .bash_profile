@@ -11,6 +11,7 @@ PROJECT_PARENT_DIRS[1]="$HOME/Projects"
 . /Users/mdg/.bash-settings/.git.sh
 . /Users/mdg/.bash-settings/.project_aliases.sh
 . /Users/mdg/.bash-settings/.vcs.sh
+. /Users/mdg/.bash-settings/.rails.sh
 
 #
 # Load RVM
