@@ -26,6 +26,6 @@ export TERM_EDITOR=vim
 #
 # Philips stuff
 #
-#export ACTIVEMQ_HOME=/Users/mdg/apache-activemq-5.2.0
-#export ACTIVEMQ_BASE=/Users/mdg/message_broker
-#source ~/.philips_proxy
+export ACTIVEMQ_HOME=/Users/mdg/apache-activemq-5.2.0
+export ACTIVEMQ_BASE=/Users/mdg/message_broker
+source ~/.philips_proxy
