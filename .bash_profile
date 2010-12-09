@@ -6,13 +6,13 @@ PROJECT_PARENT_DIRS[1]="$HOME/Projects"
 #
 # Load bash settings
 #
-. /Users/mdg/.bash-settings/.general.sh
-. /Users/mdg/.bash-settings/.aliases.sh
-. /Users/mdg/.bash-settings/.git.sh
-. /Users/mdg/.bash-settings/.project_aliases.sh
-. /Users/mdg/.bash-settings/.vcs.sh
-. /Users/mdg/.bash-settings/.rails.sh
-. /Users/mdg/.bash-settings/.completion.sh
+. ~/.bash-settings/.general.sh
+. ~/.bash-settings/.aliases.sh
+. ~/.bash-settings/.git.sh
+. ~/.bash-settings/.project_aliases.sh
+. ~/.bash-settings/.vcs.sh
+. ~/.bash-settings/.rails.sh
+. ~/.bash-settings/.completion.sh
 
 #
 # Load RVM
@@ -22,10 +22,4 @@ PROJECT_PARENT_DIRS[1]="$HOME/Projects"
 # Path setting for Homebrew
 export PATH=/usr/local/bin:$PATH
 export TERM_EDITOR=vim
-
-#
-# Philips stuff
-#
-#export ACTIVEMQ_HOME=/Users/mdg/apache-activemq-5.2.0
-#export ACTIVEMQ_BASE=/Users/mdg/message_broker
-#source ~/.philips_proxy
+export EDITOR=vim
