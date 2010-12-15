@@ -28,6 +28,19 @@ augroup myfiletypes
 augroup END
 
 "
+" ARROWS R TEH SUXXOR
+"
+" ============================================================================
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
+"
 " Swap file location
 "
 set directory=~/.vimswap
