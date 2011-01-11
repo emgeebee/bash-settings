@@ -6,6 +6,7 @@ This is where I put my bash settings for *nix systems. This includes:
 * Yellow = clean, red = dirty in prompt for SVN and Git
 * Automatic project aliases
 * Ruby on Rails specific aliases
+* Vim configuration and plugins
 * ... and much more!
 
 == Installation
@@ -23,8 +24,12 @@ This is where I put my bash settings for *nix systems. This includes:
 
 * Create some symlinks (from your home directory):
 
+	ln -s /path/to/.bash-settings/.bash_profile .bash_profile
 	ln -s /path/to/.bash-settings/.vim .vim
 	ln -s /path/to/.bash-settings/.vimrc .vimrc
+	ln -s /path/to/.bash-settings/.gvimrc .gvimrc
+	ln -s /path/to/.bash-settings/.gemrc .gemrc
+	ln -s /path/to/.bash-settings/.gitconfig .gitconfig
 
 == Credits
 
