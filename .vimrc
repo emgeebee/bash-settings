@@ -97,7 +97,7 @@ if has("gui_running")
 		" fullscreen options (MacVim only), resized window when changed to
 		" fullscreen
 		set fuoptions=maxvert,maxhorz
-	end
+  end
 endif
 
 " Control-B shows the bufexplorer
@@ -179,7 +179,6 @@ else
     set list listchars=tab:>-,trail:.,extends:>
   endif
 endif
-
 
 "
 " APIdock search for word under cursor
