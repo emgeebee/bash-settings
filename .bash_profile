@@ -6,13 +6,13 @@ PROJECT_PARENT_DIRS[1]="$HOME/Projects"
 #
 # Load bash settings
 #
-. /Users/mdg/.bash-settings/.general.sh
-. /Users/mdg/.bash-settings/.aliases.sh
-. /Users/mdg/.bash-settings/.git.sh
-. /Users/mdg/.bash-settings/.project_aliases.sh
-. /Users/mdg/.bash-settings/.vcs.sh
-. /Users/mdg/.bash-settings/.rails.sh
-. /Users/mdg/.bash-settings/.completion.sh
+. ~/.bash-settings/.general.sh
+. ~/.bash-settings/.aliases.sh
+. ~/.bash-settings/.git.sh
+. ~/.bash-settings/.project_aliases.sh
+. ~/.bash-settings/.vcs.sh
+. ~/.bash-settings/.rails.sh
+. ~/.bash-settings/.completion.sh
 
 #
 # Load RVM
@@ -28,4 +28,6 @@ export TERM_EDITOR=vim
 #
 export ACTIVEMQ_HOME=/Users/mdg/apache-activemq-5.2.0
 export ACTIVEMQ_BASE=/Users/mdg/message_broker
+export EDITOR=vim
+
 source ~/.philips_proxy

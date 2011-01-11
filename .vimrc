@@ -28,6 +28,19 @@ augroup myfiletypes
 augroup END
 
 "
+" ARROWS R TEH SUXXOR
+"
+" ============================================================================
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
+
+"
 " Swap file location
 "
 set directory=~/.vimswap
@@ -84,7 +97,7 @@ if has("gui_running")
 		" fullscreen options (MacVim only), resized window when changed to
 		" fullscreen
 		set fuoptions=maxvert,maxhorz
-	end
+  end
 endif
 
 " Control-B shows the bufexplorer
@@ -166,7 +179,6 @@ else
     set list listchars=tab:>-,trail:.,extends:>
   endif
 endif
-
 
 "
 " APIdock search for word under cursor
