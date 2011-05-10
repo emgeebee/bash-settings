@@ -13,6 +13,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gcap='git commit -v -a && git push'
 alias gpp='git pull; git push'
+alias gco='git checkout'
 
 # For when you are stuck between worlds...
 alias gsd='git svn dcommit'
