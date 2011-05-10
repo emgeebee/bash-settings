@@ -17,6 +17,7 @@ augroup filetypedetect
   au BufNewFile,BufRead *.liquid setf liquid
   au! BufRead,BufNewFile *.haml setfiletype haml
   au! BufRead,BufNewFile Gemfile setfiletype ruby
+  au! BufRead,BufNewFile *.god setfiletype ruby
   autocmd BufNewFile,BufRead *.yml setf eruby
 augroup END
 

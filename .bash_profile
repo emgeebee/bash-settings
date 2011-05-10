@@ -20,6 +20,6 @@ PROJECT_PARENT_DIRS[1]="$HOME/Projects"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Path setting for Homebrew
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export TERM_EDITOR=vim
 export EDITOR=vim
