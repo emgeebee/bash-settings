@@ -19,6 +19,7 @@ augroup filetypedetect
   au! BufRead,BufNewFile Gemfile setfiletype ruby
   au! BufRead,BufNewFile *.god setfiletype ruby
   au! BufRead,BufNewFile *.rabl setfiletype ruby
+  au! BufRead,BufNewFile *.ru setfiletype ruby
   autocmd BufNewFile,BufRead *.yml setf eruby
 augroup END
 

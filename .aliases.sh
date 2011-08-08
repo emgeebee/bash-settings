@@ -27,8 +27,7 @@ alias smate='svn diff | mate && svn ci'
 alias sadd="sst | grep '?' | cut -c5- | xargs svn add"
 
 # editing shortcuts
-alias m='mvim --remote-silent'
-alias e='emacs'
+alias m='mvim'
 alias erc='e /etc/bashrc'
 alias newrc='. /etc/bashrc'
 alias rsync_nosvn="rsync --exclude=.svn -r "
@@ -72,3 +71,6 @@ alias h?="history | grep "
 # display battery info on your Mac
 # see http://blog.justingreer.com/post/45839440/a-tale-of-two-batteries
 alias battery='ioreg -w0 -l | grep Capacity | cut -d " " -f 17-50'
+
+# What is my IP address?
+alias ip="curl -L -s --max-time 10 http://ip.appspot.com | egrep -o -m 1 '([[:digit:]]{1,3}\.){3}[[:digit:]]{1,3}'"
