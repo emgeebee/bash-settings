@@ -13,6 +13,7 @@ PROJECT_PARENT_DIRS[1]="$HOME/Projects"
 . ~/.bash-settings/.vcs.sh
 . ~/.bash-settings/.rails.sh
 . ~/.bash-settings/.completion.sh
+. ~/.bash-settings/.ssh_autocompletion.sh
 
 #
 # Load RVM

@@ -15,6 +15,7 @@ alias gcap='git commit -v -a && git push'
 alias gpp='git pull; git push'
 alias gco='git checkout'
 alias gpr='git pull --rebase'
+alias gast='git add -A && git status'
 
 # For when you are stuck between worlds...
 alias gsd='git svn dcommit'
