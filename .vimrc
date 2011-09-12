@@ -1,5 +1,9 @@
 set nocompatible
 
+" Enable Pathogen
+" =============================================================================
+call pathogen#infect()
+
 " Manage filetypes
 " =============================================================================
 autocmd FileType python set omnifunc=pythoncomplete#Complete

@@ -20,6 +20,7 @@ alias t2000='tail -n 2000'
 # Rails
 alias be='bundle exec'
 alias ber='bundle exec rake'
+alias b='bundle exec rake'
 
 # editing shortcuts
 alias m='mvim'
